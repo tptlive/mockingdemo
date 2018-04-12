@@ -2,11 +2,13 @@ package ee.tptlive.testid.mockingdemo.rest.dao;
 
 import ee.tptlive.testid.mockingdemo.rest.model.Person;
 
+import javax.enterprise.context.ApplicationScoped;
 import java.util.ArrayList;
 import java.util.List;
 
 import static java.util.Arrays.asList;
 
+@ApplicationScoped
 public class PersonDao {
 
     private List<Person> database = asList(
